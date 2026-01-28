@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import API_BASE_URL from '../apiConfig';
 import './Admin.css';
 
 const Admin = () => {
@@ -19,7 +20,7 @@ const Admin = () => {
 
     const fetchContacts = async () => {
         try {
-            const response = await fetch('http://192.168.1.103:5000/api/contact');
+            const response = await fetch(`${API_BASE_URL}/api/contact`);
             const data = await response.json();
             if (data.success) {
                 setContacts(data.data);

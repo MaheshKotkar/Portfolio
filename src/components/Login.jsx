@@ -12,6 +12,7 @@ const Login = () => {
         e.preventDefault();
 
         // Credentials provided by the user
+        // WARNING: These are hardcoded for now as requested.
         const adminEmail = 'admin123@gmail.com';
         const adminPassword = 'admin123@gmail.com';
 
