@@ -25,7 +25,7 @@ const Contact = () => {
         setStatusMessage('');
 
         try {
-            const response = await fetch('https://portfolio-backend-mu-lemon.vercel.app/api/contact', {
+            const response = await fetch('https://portfolio-backend-d6zn.onrender.com/api/contact', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
