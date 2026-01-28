@@ -19,7 +19,7 @@ const Admin = () => {
 
     const fetchContacts = async () => {
         try {
-            const response = await fetch('http://192.168.1.103:5000/api/contact');
+            const response = await fetch('https://portfolio-backend-mu-lemon.vercel.app/api/contact');
             const data = await response.json();
             if (data.success) {
                 setContacts(data.data);
